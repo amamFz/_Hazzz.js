@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studi Kasus 1</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Data SISWA</h2>
+    <br>
+    <h3 style="text-align: center;">SMKN 1 CIAMIS</h3>
+    <hr>
+    <script>
+        function kirim()
+        {
+            let nimstr =(document.fform.nims.value)
+            let mhsstr = (document.fform.nnama.value)
+            let jkstr = (document.fform.jkn.value)
+            let agmstr = (document.fform.agm.value)
+            let stsstr = (document.fform.sts.value)
+            let jsstr = (document.fform.js.value)
+            let kmnstr= (document.fform.kmn.value)
+            document.fform.onims.value = nimstr;
+            document.fform.omhs.value = mhsstr;
+            document.fform.ojks.value = jkstr;
+            document.fform.oagm.value = agmstr;
+            document.fform.osts.value = stsstr;
+            document.fform.ojs.value = jsstr;
+            document.fform.okmn.value = kmnstr;
+        }
+
+
+
+    </script>
+    <form name="fform">
+        <pre>
+            Nim             :<input type="text" name="nims">
+
+            Nama Mahasiswa  :<input type="text" name="nnama">
+
+            Jenis Kelamin   :<select name="jkn">
+                            <option value="">-</option>
+                            <option value="Laki Laki">Laki Laki</option>
+                            <option value="Perempuan">Perempuan</option>
+                            </select>
+
+            Agama           :<select name="agm">
+                            <option value="">-</option>
+                            <option value="Islam">Islam</option>
+                            <option value="Kristen">Kristen</option>
+                            <option value="Protestan">Protestan</option>
+                            <option value="Katolik">Katolik</option>
+                            <option value="Buddha">Buddha</option>
+                            <option value="Konghuchu">Konghuchu</option>
+                            </select>
+            
+            Status          :<input type="radio" value="Menikah" name="sts">Menikah <input type="radio" value="Belum Menikah" name="sts">Belum Menikah
+
+            Jurusan         :<select name="js">
+                            <option value="">-</option>
+                            <option value="AKL">AKL</option>
+                            <option value="MPLB">MPLB</option>
+                            <option value="PM">PM</option>
+                            <option value="TB">TB</option>
+                            <option value="DKV">DKV</option>
+                            <option value="PPLG">PPLG</option>
+                            </select>
+                            
+            Komentar        :<textarea name="kmn" rows="3" cols="50"></textarea>
+        </pre>
+        <div style="padding-left: 20em;">
+            <input type="button" value="kirim" onclick="kirim()">
+            <input type="reset" value="ulang">
+        </div>
+            <pre>
+                <h2>Data Keluar </h2>
+            NIM             :<input type="text", name="onims">
+
+            Nama Mahasiswa  :<input type="text"  name="omhs">
+
+            Jenis Kelamin   :<input type="text", name="ojks">
+
+            Agama           :<input type="text", name="oagm">
+
+            Status          :<input type="text", name="osts">
+
+            Jurusan         :<input type="text", name="ojs">
+
+            Komentar        :<textarea name="okmn" rows="3" cols="50"></textarea>
+            </pre>
+                            
+
+    </form>   
+</body>
+</html>
