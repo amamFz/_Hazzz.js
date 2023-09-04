@@ -1,0 +1,2 @@
+# _Hazzz.js
+JavaScriptProjeck
